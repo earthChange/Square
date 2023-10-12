@@ -1,34 +1,13 @@
-# box
+# Square
 
-[![Go Test](https://github.com/functionland/go-fula/actions/workflows/go-test.yml/badge.svg)](https://github.com/functionland/go-fula/actions/workflows/go-test.yml) [![](https://jitpack.io/v/functionland/fula-build-aar.svg)](https://jitpack.io/#functionland/fula-build-aar)
+See [Land-Plan](https://github.com/earthChange/Land-Plan)
 
-
-Client-server stack for Web3
-
-[Intro blog](https://dev.to/fx/google-photos-open-source-alternative-with-react-native-80c#ending-big-techs-reign-by-building-opensource-p2p-apps)
-
-You can see it in action in our Flagship App: [Fx Fotos](https://github.com/functionland/fx-fotos)
-
-[![Blox server demo](https://gateway.pinata.cloud/ipfs/QmVd3eioLfp19hG1GnfgceBsbK16i39vsQ9Lxq35aAjxnY)](https://gateway.pinata.cloud/ipfs/QmWUjQczA5jHC3ibLq4y7CizVrebr1DTFRaTdJgFyxR5Nh)
-
-## Motivation
-
-There are currently two ways to interact with Web3 storage solutions:
-
-1. Through a pinning service and a gateway: the advantage is that files are served through URLs, an app can then access the files with conventional methods, e.g. simply putting a picture in `<img src="gateway.example.com/Qm...">`. The disadvantage is that there is a subscription payment associated with pinning services. Also this is not really decentralized!
-2. Turn the device to a full IPFS node: this model works beautifully in Brave desktop browser as an example, and makes sense for laptop and PC since they normally have large HDDs. It's much harder on mobile devices, however, biggest hurdle is to have Apple on board with the idea of relaxing file system access in iOS! Even if all goes well, a mobile device is NOT a good candidate for hosting the future Web! They get lost easily and are resource constrained (battery, memory).
-
-[**blox**](https://github.com/functionland/BLOX) aims to address these issues by creating a third alternative: **Personal Server**
-
-A personal server is a commodity hardware device (such as a PC or Raspberry Pi) that is kept *at home* rather than carried with the user. It can help with actual decentralization and can save money in the long run, as there is a one-time cost for the hard drive and no monthly charges. From a privacy perspective, it also guarantees that data does not leave the premises unless the user specifically wants to share it.
-
-To achieve this, we are developing protocols to accommodate client-server programming with minimal effort on developer's side.
+----
+Documentation from [box](https://github.com/functionland/go-fula/) follows:
 
 ## Architecture
 
 `go-fula` is an implementation of the Fula protocol in Go (Golang). It is designed to facilitate smooth communication between clients and a mesh of backend devices (servers) and provide APIs for developers to build mobile-native decentralized applications (dApps).
-
-![box architecture](https://gateway.pinata.cloud/ipfs/QmNkoQfCKAzQetJKWfNtLioJf6FCxzqjoDT2KshDZfsJd3)
 
 A React Native app can communicate with servers using the `@functionland/react-native-fula` library, which abstracts the underlying protocols and `libp2p` connection and exposes APIs similar to those of MongoDB for data persistence and S3 for file storage.
 
@@ -82,6 +61,3 @@ make fula-xcframework
 
 [MIT](LICENSE)
 
-## Related Publications and News
-
-- https://www.crunchbase.com/organization/functionland/signals_and_news
